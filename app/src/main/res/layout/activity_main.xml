@@ -4,56 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="kr.hs.emirim.joseoyoung.simplecalculator.MainActivity"
     android:orientation="vertical"
-    tools:context="kr.hs.emirim.joseoyoung.simplecalculator.MainActivity">
+    >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="30sp"
         android:text="단순 계산기"
         />
+
     <EditText
         android:id="@+id/edit_first"
-        android:layout_width="50dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:hint="정수로 입력"
+        android:hint="정수 값으로 입력"
         />
     <EditText
         android:id="@+id/edit_second"
-        android:layout_width="50dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:hint="정수로 입력"
+        android:hint="정수 값으로 입력"
         />
-    <EditText
-        android:id="@+id/edit_plus"
+
+    <Button
+        android:id="@+id/but_plus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="+"
+        android:text="+"
         />
-    <EditText
-        android:id="@+id/edit_minus"
+    <Button
+        android:id="@+id/but_minus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="-"
+        android:text="-"
         />
-    <EditText
-        android:id="@+id/edit_multiply"
+    <Button
+        android:id="@+id/but_multply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="×"
+        android:text="X"
         />
-    <EditText
-        android:id="@+id/edit_division"
+    <Button
+        android:id="@+id/but_division"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="/"
+        android:text="/"
         />
+
     <TextView
+        android:id="@+id/text_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:textColor="#1d3e67"
+        android:textColor="#ed0caa"
         />
+
 </LinearLayout>
